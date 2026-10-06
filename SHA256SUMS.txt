@@ -1,0 +1,5 @@
+f8cd64c35544d1d14e2639bfbdb151db1522e5167aef41aa9021ef30c428b6a3  Ryba-0.4.1-apple-silicon.dmg
+ef20473f0075f7bb6fc62f195be7a6508f5dedebd2133e2836f000598c82cf36  Ryba-0.4.1-mac-arm64.zip
+cc2c0fa176f6a0c7eda4e70f05d5b012a23cde2be3ac910fbea0761e7cc334aa  Ryba-0.4.1-setup.exe
+7eaf0ddac6b9f056a1f96c3de25051a21ed6366f70eda98b97b3f8614affe488  Ryba-0.4.1-windows-x64.exe
+67d2e50c870ac9a3292342ae7144c4b192817cf8c6671fd7bdd75ae107649f10  Ryba-0.4.1-windows7-x86.exe

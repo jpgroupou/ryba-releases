@@ -1,0 +1,21 @@
+{
+  "version": "0.4.1",
+  "date": "2026-10-06T20:11:45Z",
+  "notes": {
+    "en": "- First version built and published automatically. No changes in how the app works.\n- Confirms that updating works: Ryba downloads this version in the background and installs it when you press \"Install update\".",
+    "et": "- Esimene automaatselt koostatud ja avaldatud versioon. Rakenduse töös muudatusi pole.\n- Kinnitab, et uuendamine töötab: Ryba laadib selle versiooni taustal alla ja paigaldab selle, kui vajutate „Paigalda uuendus“.",
+    "ru": "- Первая версия, собранная и опубликованная автоматически. В работе приложения изменений нет.\n- Проверяет, что обновление работает: Ryba загружает эту версию в фоне и устанавливает её по кнопке «Установить обновление»."
+  },
+  "files": {
+    "darwin-arm64": {
+      "name": "Ryba-0.4.1-mac-arm64.zip",
+      "size": 12013014,
+      "sha256": "ef20473f0075f7bb6fc62f195be7a6508f5dedebd2133e2836f000598c82cf36"
+    },
+    "windows": {
+      "name": "Ryba-0.4.1-setup.exe",
+      "size": 20182822,
+      "sha256": "cc2c0fa176f6a0c7eda4e70f05d5b012a23cde2be3ac910fbea0761e7cc334aa"
+    }
+  }
+}
