@@ -1,0 +1,33 @@
+# Publishes a Ryba release in this public updates repository.
+#
+# Kept in jpgroupou/ryba (build/releases-repo/publish.yml) and copied to the main
+# branch of jpgroupou/ryba-releases by hand when it changes. Ryba's release workflow
+# pushes a tag whose commit adds one release's files on top of main; this turns them
+# into a GitHub release. Installed apps read latest.json (signed: they accept nothing else) from
+# the newest non-pre-release.
+name: Publish
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          flags=(--latest)
+          if [ "$(cat prerelease)" = true ]; then flags=(--prerelease --latest=false); fi
+          gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --title "Ryba ${TAG#v}" \
+            --notes-file notes.md "${flags[@]}" \
+            Ryba-* latest.json latest.json.sig SHA256SUMS.txt
